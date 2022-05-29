@@ -6,7 +6,9 @@ function Def (html) {
             <head>
                 <title>Title</title>
             </head>
-            <body>{html.children}</body>
+            <body>
+                {html.children}
+            </body>
         </html>
     )
 }
