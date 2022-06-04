@@ -12,7 +12,8 @@ app.get('/', (req, res) => {
 })
 
 app.get ('*', (req, res) => {
-    res.status(404).send ('<h1>error page</h1>')
+    res.render('error404') //when changed to render, pass through the name of the file instead of a text to be displayed
 })
+
 
 app.listen(process.env.PORT)
