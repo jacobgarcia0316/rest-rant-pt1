@@ -8,7 +8,7 @@ app.engine('jsx', require('express-react-views').createEngine())
 app.use('/places', require ('./controllers/places'))
 
 app.get('/', (req, res) => {
-    res.render('Home') //when changed to render, pass through the name of the file instead of a text to be displayed
+    res.render('home') //when changed to render, pass through the name of the file instead of a text to be displayed
 })
 
 app.get ('*', (req, res) => {
