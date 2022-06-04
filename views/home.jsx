@@ -6,6 +6,9 @@ function home () {
         <Def>
             <main>
                 <h1>hello home page</h1>
+                <div>
+                    <img src = "/images/market.jpg" height="500" width = "500" alt="home page picture"/>
+                </div>
                 <a href="/places">
                     <button className="btnPrimary">Places Page</button>
                 </a>
