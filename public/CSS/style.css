@@ -1,10 +1,12 @@
-h1 {
+body {
     text-align: center;
-    color: black;
+    color: rgb(126, 35, 245);
 }
 
 * {
     background-color: rgb(195, 214, 250);
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 img {
@@ -13,3 +15,27 @@ img {
     border-radius: 10px;
 }
 
+nav {
+    background-color: rgb(195, 214, 250);
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 25px;
+}
+
+nav a {
+    color: rgb(126, 35, 245);
+    font-size: 1.5em;
+}
+
+nav a:hover {
+    color: red;
+    text-decoration: none;
+}
