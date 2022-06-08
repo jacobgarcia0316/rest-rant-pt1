@@ -5,7 +5,6 @@ const app = express()
 const methodOverride = require('method-override')
 
 //mongoose and mongodb
-
 const mongoose = require('mongoose')
 
 mongoose.connect(process.env.MONGO_URI, {
