@@ -1,13 +1,13 @@
-module.exports = [{
-    name: 'H-Thai-ML',
-    city: 'Seattle',
-    state: 'WA',
-    cuisines: 'Thai, Pan-Asian',
-    pic: 'images/food1.jpg' 
-  }, {
-    name: 'Coding Cat Cafe',
-    city: 'Phoenix',
-    state: 'AZ',
-    cuisines: 'Coffee, Bakery',
-    pic: 'images/food2.jpg'
-  }]
+const mongoose = require('mongoose')
+const { stringify } = require('querystring')
+
+const placeSchema = new mongoose.Schema({
+  name: {type: String, required: true},
+  pic: String,
+  cuisines: {type: String, required: true},
+  city: {type: String, default: 'somewhere'},
+  state: {type: String, default: 'somewhere else'},
+  founded: Number,
+})
+
+module.exports = mongoose.model ('Place', placeSchema)

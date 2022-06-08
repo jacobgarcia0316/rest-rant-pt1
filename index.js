@@ -4,6 +4,18 @@ const express = require('express')
 const app = express()
 const methodOverride = require('method-override')
 
+//mongoose and mongodb
+
+const mongoose = require('mongoose')
+
+mongoose.connect(process.env.MONGO_URI, {
+  useNewUrlParser: true, 
+  useUnifiedTopology: true
+})
+
+module.exports.Place = require ('./controllers/places')
+
+
 //express settings
 app.set('views', __dirname + '/views')
 app.set('view engine', 'jsx')
