@@ -1,6 +1,8 @@
 const db = require ('../models/places.js')
+const mongoose = require('mongoose')
+
 //* issues with .create not being able to be defined or read*/
-db.Place.create([{
+db.Place.create ([{
     name: 'H-Thai-ML',
     city: 'Seattle',
     state: 'WA',
@@ -21,7 +23,7 @@ db.Place.create([{
     process.exit()
 })
 .catch(err => {
-    console.log('it didnt work', err)
+    console.log('it did not work', err)
     process.exit()
 })
 

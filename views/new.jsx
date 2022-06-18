@@ -36,7 +36,8 @@ function new_form() {
                     name="founded"
                     value={new Date().getFullYear()} />
                 </div>
-                <input className="btn btn-primary" type ="submit" value="Add Place"></input>
+                <a href="/places"></a>
+                <input className="btn btn-primary" type ="submit" value="Add Place" ></input> 
                 </form>
             </main>
         </Def>
